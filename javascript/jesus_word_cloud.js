@@ -447,16 +447,16 @@ function draw(words) {
     zoom_group = svg.append('g');
 
     // define a zoom behavior
-    var zoom = d3.behavior.zoom()
-        .scaleExtent([1, 4]) // min-max zoom
-        .on('zoom', function () {
-            // whenever the user zooms,
-            // modify translation and scale of the zoom group accordingly
-            zoom_group.attr('transform', 'translate(' + zoom.translate() + ')scale(' + zoom.scale() + ')');
-        });
+    // var zoom = d3.behavior.zoom()
+    //     .scaleExtent([1, 4]) // min-max zoom
+    //     .on('zoom', function () {
+    //         // whenever the user zooms,
+    //         // modify translation and scale of the zoom group accordingly
+    //         zoom_group.attr('transform', 'translate(' + zoom.translate() + ')scale(' + zoom.scale() + ')');
+    //     });
 
     // bind the zoom behavior to the main SVG
-    svg.call(zoom);
+    // svg.call(zoom);
 
 
     zoom_group.append("g")
