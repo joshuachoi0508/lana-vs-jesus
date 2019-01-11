@@ -136,17 +136,17 @@ function updateGraph(selectedIds) {
             return "translate(0, " + y0(d.site) + ")";
         });
 
-    var age = site.selectAll("rect")
+    var selectedPerson = site.selectAll("rect")
         .data(function (d) {
             return d.totalCounts;
         });
 
     // we append a new rect every time we have an extra data vs dom element
-    age.enter().append("rect")
+    selectedPerson.enter().append("rect")
         .attr('width', 0);
 
     // this updates will happend neither inserting new elements or updating them
-    age
+    selectedPerson
         .attr("x", 0)
         .attr("y", function (d, index) {
             return y1(ids[index]);
@@ -166,11 +166,11 @@ function updateGraph(selectedIds) {
         })
         .attr("height", y1.rangeBand());
 
-    age.exit().transition().attr("width", 0).remove();
+    selectedPerson.exit().transition().attr("width", 0).remove();
 
     var legend = svg.selectAll(".legend")
-        .data(statesData[0].totalCounts.map(function (age) {
-            return age.name;
+        .data(statesData[0].totalCounts.map(function (selectedPerson) {
+            return selectedPerson.name;
         }));
 
     legend.enter().append("g");
