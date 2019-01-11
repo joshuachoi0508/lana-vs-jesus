@@ -36,12 +36,12 @@ var margin = {
     width = 800 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
-// the scale for the site age value
+// the scale for the site value
 var x = d3.scale.linear().range([0, width]);
 
-// the scale for each site
+// the scale for each site value
 var y0 = d3.scale.ordinal().rangeBands([0, height], .1);
-// the scale for each site age
+// the scale for each value
 var y1 = d3.scale.ordinal();
 
 // just a simple scale of colors
@@ -79,7 +79,7 @@ function renderGraph() {
     y0.domain(data.map(function (d) {
         return d.site;
     }));
-    // y1 domain is all the age names, we limit the range to from 0 to a y0 band
+    // y1 domain are Lana and Jesus, we limit the range to from 0 to a y0 band
     y1.domain(personName).rangeRoundBands([0, y0.rangeBand()]);
 
     svg.append("g")
@@ -121,7 +121,7 @@ function updateGraph(selectedIds) {
     y0.domain(statesData.map(function (d) {
         return d.site;
     }));
-    // y1 domain is all the age names, we limit the range to from 0 to a y0 band
+    // y1 domain are Lana and Jesus, we limit the range to from 0 to a y0 band
     y1.domain(ids).rangeRoundBands([0, y0.rangeBand()]);
 
     svg.selectAll('.axis.x').call(xAxis);
