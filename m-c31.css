@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Serif TC', serif;
+    background: ghostwhite;
+}
+
+.site-title {
+    font-family: 'Noto Serif TC', serif;
+    color: darkslategrey;
+    margin-bottom: 32px;
+}
+
+.sub-subtitle {
+    font-family: 'Noto Serif TC', serif;
+    color: darkslategrey;
+    margin-bottom: 0;
+}
+
+.title-holder {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+}
+
+.text-analysis-title {
+    color: darkslategrey;
+    font-size: 20px;
+}
+
+.writing-credits-title {
+    color: darkslategrey;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.writing-credits {
+    display: flex;
+    width: 100%;
+    width: 960px;
+}
+
+
+.font {
+    font-size: 18px;
+}
+
+/* legend */
+.legend {
+    font-size: 14px;
+}
+
+rect {
+    cursor: pointer;
+    stroke-width: 2;
+}
+
+rect.disabled {
+    fill: transparent !important;
+}
+
+#lana-jesus {
+    /* margin: 0 auto;
+    position: relative;
+    display: block; */
+    margin-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* tooltip */
+.tooltip {
+    background: #eee;
+    box-shadow: 0 0 5px #999999;
+    color: #333;
+    display: none;
+    font-size: 18px;
+    left: 130px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    width: 120px;
+    z-index: 10;
+}
+
+.jesus {
+    margin-right: 130px;
+}
+
+p {
+    width: 700px;
+}
+
+.red {
+    color:rgb(208, 73, 57);
+    text-decoration: none;
+}
+
+.green {
+    color: rgb(0, 140, 60);
+    text-decoration: none;
+}
