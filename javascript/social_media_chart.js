@@ -7,7 +7,7 @@ var data = [{
         stats: [2027307, 3277946]
     },
     {
-        site: 'Youtube',
+        site: 'YouTube',
         stats: [1208495, 2141490]
     }
 ];
