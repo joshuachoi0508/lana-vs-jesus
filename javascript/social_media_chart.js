@@ -33,7 +33,7 @@ var margin = {
         bottom: 30,
         left: 100
     },
-    width = 600 - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 // the scale for the site age value
