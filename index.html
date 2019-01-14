@@ -14,6 +14,8 @@
   <!-- layouts -->
   <script src="javascript/text_analysis_javascript.js"></script>
   <script src='javascript/word_cloud_layout.js'></script>
+
+  <script type="text/javascript" src="javascript/insta-bar-graph.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
     </br>
     </br>
     In comparison, Lana's lyrics are full of <u class="green">green</u>. She sings about fun things like <u class="green">Coney Island, party, 
-    Hollywood, doing it like it's hot, and my personal favorite, alcohol.</u> She's spreaing so much positivity that just reading the word bubble 
+    Hollywood, doing it like it's hot, and my personal favorite, alcohol.</u> She's spreading so much positivity that just reading the word bubble 
     makes me want to get up and dance! 
     </br>
     </br>  
@@ -48,7 +50,7 @@
     </br>
     </br>
     The last comparison I'll be making comes from the use of food in the bible versus Lana's songs. In top 100 most frequently used words in the bible, 
-    the only food mentioed is bread. Just bread. <u class="red">Not even garlic bread</u>. Just bread. Not a cake, not a begel. <u class="red">It's. Just. Bread.</u>
+    the only food mentioned is bread. Just bread. <u class="red">Not even garlic bread</u>. Just bread. Not a cake, not a bagel. <u class="red">It's. Just. Bread.</u>
     In comparison, Lana's all about having options and enjoying different foods! Want some sweets? Lana can give you <u class="green">lollipops!</u> Not a fan of lollipops?
     How about some <u class="green">ice cream</u> then? Want something healthy? She's got <u class="green">peaches!</u>
     Thirsty? Lana has choices! <u class="green">mountain dew, cocal cola, or pepsi cola, which one would you like?</u> you make the decision! Lana will keep you nourished. 
@@ -85,8 +87,15 @@
       </div>
     </div>
   </div>
-  <script src="javascript/social_media_chart.js"></script>
 
+  <div id="chart"></div>
+
+  <script>
+    var instaInputData = [{label:"Lana Del Rey",value:4200000},{label:"Jesus",value:4000000}];
+
+    var instaColorScheme = ["#E57373","#BA68C8","#7986CB","#A1887F","#90A4AE","#AED581","#9575CD","#FF8A65","#4DB6AC","#FFF176","#64B5F6","#00E676"];
+    renderInstaBarChart(instaInputData,"#chart","", instaColorScheme);
+  </script>
   
   <script src='javascript/pie_chart_layout.js'></script>
   <script src="javascript/lana_pie_chart.js"></script>
