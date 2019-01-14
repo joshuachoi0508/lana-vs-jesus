@@ -1,4 +1,4 @@
-function renderInstaBarChart(inputData,dom_element_to_append_to,yaxisLabel, colorScheme){
+function renderTwitterBarChart(inputData, dom_element_to_append_to, yaxisLabel, colorScheme) {
 
     var margin = {top: 40, right: 40, bottom: 150, left: 90},
     width = 300 - margin.left - margin.right,

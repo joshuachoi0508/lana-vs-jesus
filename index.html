@@ -15,14 +15,17 @@
   <script src="javascript/text_analysis_javascript.js"></script>
   <script src='javascript/word_cloud_layout.js'></script>
 
+  <!-- javascript -->
   <script type="text/javascript" src="javascript/insta-bar-graph.js"></script>
+  <script type="text/javascript" src="javascript/twitter-bar-graph.js"></script>
+  <script type="text/javascript" src="javascript/youtube-bar-graph.js"></script>
 </head>
 
 <body>
   <h1 class="site-title">Why is Lana Del Rey better than Jesus?</h1>
 
   <!-- text analysis -->
-  <h2 class="text-analysis-title">Text analysis</h2>
+  <h2 class="text-analysis-title">Text Analysis</h2>
   <h3 class="sub-subtitle">Lana</h3>
   <script src='javascript/lana_word_cloud.js'></script>
   <h3 class="sub-subtitle">Jesus</h3>
@@ -56,7 +59,7 @@
     Thirsty? Lana has choices! <u class="green">mountain dew, cocal cola, or pepsi cola, which one would you like?</u> you make the decision! Lana will keep you nourished. 
   </p>
   <!-- writing credits -->
-  <h2 class="writing-credits-title">Writing credits</h2>
+  <h2 class="writing-credits-title">Writing Credits</h2>
   <div class="writing-credits">
     <div id="lana-jesus"></div>
   </div>
@@ -88,15 +91,32 @@
     </div>
   </div>
 
-  <div id="chart"></div>
+  <h2 class="social-media-presence-title">Social Media Presence</h2>
+
+  <div class="social-media-presence-charts">
+    <div id="insta-chart">
+      <h3 class="sub-subtitle">Instagram</h3>   
+    </div>
+    <div id="twitter-chart">
+      <h3 class="sub-subtitle">Twitter</h3>  
+    </div>
+  </div>
 
   <script>
     var instaInputData = [{label:"Lana Del Rey",value:4200000},{label:"Jesus",value:4000000}];
 
-    var instaColorScheme = ["#E57373","#BA68C8","#7986CB","#A1887F","#90A4AE","#AED581","#9575CD","#FF8A65","#4DB6AC","#FFF176","#64B5F6","#00E676"];
-    renderInstaBarChart(instaInputData,"#chart","", instaColorScheme);
+    var instaColorScheme = ["rgb(49, 130, 189)","rgb(0, 140, 60)"];
+    renderInstaBarChart(instaInputData,"#insta-chart","", instaColorScheme);
   </script>
-  
+
+  <script>
+    var twitterInputData = [{label:"Lana Del Rey",value:11000000},{label:"Jesus",value:680000}];
+
+    var twitterColorScheme = ["rgb(49, 130, 189)","rgb(0, 140, 60)"];
+    renderTwitterBarChart(twitterInputData,"#twitter-chart","", twitterColorScheme);
+  </script>
+
+  <!-- javascript -->
   <script src='javascript/pie_chart_layout.js'></script>
   <script src="javascript/lana_pie_chart.js"></script>
   <script src="javascript/jesus_pie_chart.js"></script>
