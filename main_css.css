@@ -125,10 +125,19 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 365px;
 }
 
 #twitter-chart {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 365px;
+}
+
+#youtube-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 365px;
 }

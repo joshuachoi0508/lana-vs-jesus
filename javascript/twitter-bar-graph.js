@@ -77,8 +77,8 @@ function renderTwitterBarChart(inputData, dom_element_to_append_to, yaxisLabel, 
 
     svg.selectAll(".bar")
     .on('mouseover', function(d) {
-        tooltip.select('.label').html("<b> Label: " + d.label + "</b>");
-        tooltip.select('.value').html("<b> Value: " + d.value + "</b>");
+        tooltip.select('.label').html(d.label + "</b>");
+        tooltip.select('.value').html(d.value + "</b>");
 
         tooltip.style('display', 'block');
         tooltip.style('opacity', 2);

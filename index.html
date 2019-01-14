@@ -100,10 +100,13 @@
     <div id="twitter-chart">
       <h3 class="sub-subtitle">Twitter</h3>  
     </div>
+    <div id="youtube-chart">
+      <h3 class="sub-subtitle">YouTube</h3>  
+    </div>
   </div>
 
   <script>
-    var instaInputData = [{label:"Lana Del Rey",value:4200000},{label:"Jesus",value:4000000}];
+    var instaInputData = [{label:"Lana Del Rey",value:12000000},{label:"Jesus",value:1700000}];
 
     var instaColorScheme = ["rgb(49, 130, 189)","rgb(0, 140, 60)"];
     renderInstaBarChart(instaInputData,"#insta-chart","", instaColorScheme);
@@ -115,6 +118,17 @@
     var twitterColorScheme = ["rgb(49, 130, 189)","rgb(0, 140, 60)"];
     renderTwitterBarChart(twitterInputData,"#twitter-chart","", twitterColorScheme);
   </script>
+
+  <script>
+    var youtubeIntputData = [{label:"Lana Del Rey",value:7800000},{label:"Jesus",value:900000}];
+
+    var youtubeColorScheme = ["rgb(49, 130, 189)","rgb(0, 140, 60)"];
+    renderYoutubeChart(youtubeIntputData,"#youtube-chart","", youtubeColorScheme);
+  </script>
+
+  <p>
+    Social media presence is one of the most important strength a famous person can have today. 
+  </p>
 
   <!-- javascript -->
   <script src='javascript/pie_chart_layout.js'></script>
