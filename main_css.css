@@ -34,7 +34,7 @@ body {
 
 .writing-credits-title {
     color: darkslategrey;
-    margin-top: 0;
+    margin: 20px 0 20px 0;
     font-size: 20px;
 }
 
@@ -113,12 +113,17 @@ p {
 
 .social-media-presence-title {
     color: darkslategrey;
-    margin-top: 0;
+    margin-top: 20px;
     font-size: 20px;
 }
 
 .social-media-presence-charts {
     display: flex;
+}
+
+.conclusion-title {
+    color: darkslategrey;
+    font-size: 20px;
 }
 
 #insta-chart {
