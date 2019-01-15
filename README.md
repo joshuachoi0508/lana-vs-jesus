@@ -6,6 +6,6 @@ Live site: [Lana vs. Jesus](https://joshuachoi0508.github.io/Lana-vs-Jesus/)
 
 ## Visuals
 ### Word Cloud
-Text analysis section of the project has two word clouds. Each word's text-size is based on the frequency of the word used in a certain writing (in this case Lana's songs and the Bible) and the color of the song is based on the polarity of the word (green for positive/neutral and red for negative). It was made using d3.layout.cloud created by Jason Davies.
+Text analysis section of the project has two word clouds. Each word's text-size is based on the frequency of the word used in a certain writing (in this case Lana's songs and the Bible) and the color of the word is based on the polarity of the word (green for positive/neutral and red for negative). Whenever the page is refreshed, the clouds appear with cool animation. It was made using d3.layout.cloud created by Jason Davies.
 
 ![WordCloudGif](https://github.com/joshuachoi0508/Lana-vs-Jesus/blob/master/readMe/text_analysis.gif)
