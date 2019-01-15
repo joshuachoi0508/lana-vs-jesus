@@ -6,4 +6,4 @@ Live site: [Lana vs. Jesus](https://joshuachoi0508.github.io/Lana-vs-Jesus/)
 
 ## Visuals
 ### Word Cloud
-![TextAnalysisGif](./readme/text_analysis.gif)
+![WordCloudGif](./readme/text_analysis.gif)
