@@ -2,7 +2,7 @@
 
 Live site: [Lana vs. Jesus](https://joshuachoi0508.github.io/Lana-vs-Jesus/)
 
-`Lana vs Jesus` is a humorous project that compares the singer Lana Del Rey with Jesus using different charts/diagrams by `D3`, `Javascript`, `HTML`, and `CSS`.
+`Lana vs Jesus` is a tongue-in-cheek project that compares the singer Lana Del Rey with Jesus using different charts/diagrams by `D3`, `Javascript`, `HTML`, and `CSS`.
 
 ## Visuals
 ### Word Cloud
