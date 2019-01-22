@@ -10,6 +10,10 @@ Text Analysis section of the project has two word clouds. Each word's text-size 
 
 Coloring based on polarity:
 ```javascript
+var color = d3.scale.quantize()
+    .domain([-max, max])
+    .range([d3.hcl(36, 65, 50), d3.hcl(150, 65, 50)]);
+
 .style("fill", function (d) {
     return color(d[person].polarity);
 })
