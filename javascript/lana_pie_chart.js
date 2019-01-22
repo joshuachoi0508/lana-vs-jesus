@@ -179,7 +179,7 @@ var path = svg.selectAll('path') // select all path elements inside the svg. spe
 
 // mouse event handlers are attached to path so they need to come after its definition
 path.on('mouseover', function (d) { // when mouse enters div      
-    var total = d3.sum(dataset.map(function (d) { // calculate the total number of tickets in the dataset         
+    var total = d3.sum(dataset.map(function (d) { // calculate the total number of artists in the dataset         
         return (d.enabled) ? d.count : 0; // checking to see if the entry is enabled. if it isn't, we return 0 and cause other percentages to increase                                      
     }));
     var percent = Math.round(1000 * d.data.count / total) / 10; // calculate percent
