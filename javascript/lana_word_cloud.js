@@ -510,46 +510,46 @@ d3.layout.cloud().size([960, 500])
     .on("end", draw)
     .start();
 
-function draw(words) {
-    var svg = d3.select("body").append("svg")
-        .attr("width", 960)
-        .attr("height", 500);
+// function draw(words) {
+//     var svg = d3.select("body").append("svg")
+//         .attr("width", 960)
+//         .attr("height", 500);
 
-    zoom_group = svg.append('g');
+//     zoom_group = svg.append('g');
 
-    zoom_group.append("g")
-        .attr("transform", "translate(480,250)")
-        .selectAll("text")
-        .data(words)
-        .enter()
-        .append("text")
-        .style("font-size", function (d) {
-            return font_size(d[person].count) + "px";
-        })
-        .style("font-family", "Impact")
-        .style("fill", function (d) {
-            return color(d[person].polarity);
-        })
-        .style("fill-opacity", function (d) {
-            return (d[person].count > 0) ? 1 : 0;
-        })
-        .attr("text-anchor", "middle")
-        .attr("transform", function (d) {
-            var far = 1500 * (Math.random() > 0.5 ? +1 : -1);
-            if (d.rotate === 0)
-                return "translate(" + far + ",0)rotate(" + d.rotate + ")";
-            else
-                return "translate(0," + far + ")rotate(" + d.rotate + ")";
-        })
-        .text(function (d) {
-            return d.lemma;
-        })
-        .transition()
-        .duration(2000)
-        .attr("transform", function (d) {
-            return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-        });
-}
+//     zoom_group.append("g")
+//         .attr("transform", "translate(480,250)")
+//         .selectAll("text")
+//         .data(words)
+//         .enter()
+//         .append("text")
+//         .style("font-size", function (d) {
+//             return font_size(d[person].count) + "px";
+//         })
+//         .style("font-family", "Impact")
+//         .style("fill", function (d) {
+//             return color(d[person].polarity);
+//         })
+//         .style("fill-opacity", function (d) {
+//             return (d[person].count > 0) ? 1 : 0;
+//         })
+//         .attr("text-anchor", "middle")
+//         .attr("transform", function (d) {
+//             var far = 1500 * (Math.random() > 0.5 ? +1 : -1);
+//             if (d.rotate === 0)
+//                 return "translate(" + far + ",0)rotate(" + d.rotate + ")";
+//             else
+//                 return "translate(0," + far + ")rotate(" + d.rotate + ")";
+//         })
+//         .text(function (d) {
+//             return d.lemma;
+//         })
+//         .transition()
+//         .duration(2000)
+//         .attr("transform", function (d) {
+//             return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+//         });
+// }
 
 function shuffle(array) {
     let counter = array.length;

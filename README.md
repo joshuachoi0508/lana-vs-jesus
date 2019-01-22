@@ -8,6 +8,19 @@ Live site: [Lana vs. Jesus](https://joshuachoi0508.github.io/Lana-vs-Jesus/)
 ### Word Cloud
 Text Analysis section of the project has two word clouds. Each word's text-size is based on the frequency of the word used in a certain writing (in this case Lana's songs and the Bible) and the color of the word is based on the polarity of the word (green for positive/neutral and red for negative). Whenever the page is refreshed, the clouds appear with cool animation. It was made using d3.layout.cloud created by Jason Davies.
 
+Coloring based on polarity:
+```javascript
+.style("fill", function (d) {
+    return color(d[person].polarity);
+})
+```
+Font-size based on frequency: 
+```javascript
+.style("font-size", function (d) {
+    return font_size(d[person].count) + "px";
+})
+```
+
 ![WordCloudGif](./readMe/word_clouds.gif)
 ### Pie Chart
 Writing Credits section has two pie charts. Visitors can hover over the charts to see different writers involved in writing Lana's songs and the Bible. They were made using d3 layout created by Lisa Nguyen.
