@@ -398,12 +398,6 @@ var font_size = d3.scale.linear()
     .domain([1, max])
     .range([10, 100]);
 
-
-// var color = d3.scale.linear()
-//     .domain([-max, 0, max])
-//     .range([d3.hcl(36, 65, 50), d3.hcl(95, 65, 80), d3.hcl(150, 65, 50)])
-//     .interpolate(d3.interpolateHcl);
-
 var color = d3.scale.quantize()
     .domain([-max, max])
     .range([d3.hcl(36, 65, 50), d3.hcl(150, 65, 50)]);
@@ -445,18 +439,6 @@ function draw(words) {
 
     // append a group for zoomable content
     zoom_group = svg.append('g');
-
-    // define a zoom behavior
-    // var zoom = d3.behavior.zoom()
-    //     .scaleExtent([1, 4]) // min-max zoom
-    //     .on('zoom', function () {
-    //         // whenever the user zooms,
-    //         // modify translation and scale of the zoom group accordingly
-    //         zoom_group.attr('transform', 'translate(' + zoom.translate() + ')scale(' + zoom.scale() + ')');
-    //     });
-
-    // bind the zoom behavior to the main SVG
-    // svg.call(zoom);
 
 
     zoom_group.append("g")

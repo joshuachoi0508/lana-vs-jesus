@@ -515,22 +515,7 @@ function draw(words) {
         .attr("width", 960)
         .attr("height", 500);
 
-
-    // append a group for zoomable content
     zoom_group = svg.append('g');
-
-    // define a zoom behavior
-    // var zoom = d3.behavior.zoom()
-    //     .scaleExtent([1, 4]) // min-max zoom
-    //     .on('zoom', function () {
-    //         // whenever the user zooms,
-    //         // modify translation and scale of the zoom group accordingly
-    //         zoom_group.attr('transform', 'translate(' + zoom.translate() + ')scale(' + zoom.scale() + ')');
-    //     });
-
-    // bind the zoom behavior to the main SVG
-    // svg.call(zoom);
-
 
     zoom_group.append("g")
         .attr("transform", "translate(480,250)")
