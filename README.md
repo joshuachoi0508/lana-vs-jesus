@@ -28,7 +28,7 @@ Writing Credits section has two pie charts. Visitors can hover over the charts t
 Moveover effect: 
 ```javascript
 path.on('mouseover', function (d) { // when mouse enters div      
-    var total = d3.sum(dataset.map(function (d) { // calculate the total number of artists in the dataset         
+    var total = d3.sum(dataset.map(function (d) { // calculate the total number of writers in the dataset         
         return (d.enabled) ? d.count : 0; // checking to see if the entry is enabled. if it isn't, we return 0 and cause other percentages to increase                                      
     }));
     var percent = Math.round(1000 * d.data.count / total) / 10; // calculate percent
