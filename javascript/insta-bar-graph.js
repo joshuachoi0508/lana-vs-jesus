@@ -31,7 +31,7 @@ function renderInstaBarChart(inputData,dom_element_to_append_to,yaxisLabel, colo
 
     inputData.forEach(function(d) {
         d.label = d.label;
-        d.value = +d.value;
+        d.value =+ d.value;
     });
 
     x.domain(inputData.map(function(d) { return d.label; }));
@@ -78,7 +78,7 @@ function renderInstaBarChart(inputData,dom_element_to_append_to,yaxisLabel, colo
     svg.selectAll(".bar")
     .on('mouseover', function(d) {
         tooltip.select('.label').html(d.label + "</b>");
-        tooltip.select('.value').html(d.value + "</b>");
+        tooltip.select('.value').html(d.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</b>");
 
         tooltip.style('display', 'block');
         tooltip.style('opacity', 2);
