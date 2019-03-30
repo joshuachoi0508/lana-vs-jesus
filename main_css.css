@@ -146,3 +146,21 @@ p {
     align-items: center;
     height: 365px;
 }
+
+.content {
+    height: 4.3em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.read-more {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    bottom: 65px;
+    height: 73px;
+    background: linear-gradient(to bottom, #f8f8fe24, #f8f8fe);
+    display: flex;
+    align-items: flex-end;
+};
